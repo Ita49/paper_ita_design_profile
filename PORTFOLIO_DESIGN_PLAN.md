@@ -4,7 +4,7 @@
 **Last updated:** April 2026  
 **Design tool:** Paper  
 **Token file:** `tokens.css`  
-**Status:** In progress
+**Status:** Complete ✅
 
 ---
 
@@ -47,8 +47,8 @@ ita-okponung.com
 ```
 
 **Total pages to design:** 11  
-**Completed:** 2  
-**Remaining:** 9
+**Completed:** 11  
+**Remaining:** 0
 
 ---
 
@@ -413,12 +413,12 @@ Pages are built in this order to maximise component reuse and narrative flow:
 | 3     | Design Tokens — Visual Library            | ✅ Done |
 | 4     | Case Study: Risk & Compliance Dashboard   | ✅ Done |
 | 5     | About                                     | ✅ Done |
-| 6     | Process                                   | ⬜ Next |
-| 7     | Contact                                   | ⬜      |
-| 8     | Case Study: Merchant Onboarding & KYC     | ⬜      |
-| 9     | Case Study: Payment & Fraud Management    | ⬜      |
-| 10    | Case Study: Operational Workflow Redesign | ⬜      |
-| 11    | Case Study: Customer Journey Redesign     | ⬜      |
+| 6     | Process                                   | ✅ Done |
+| 7     | Contact                                   | ✅ Done |
+| 8     | Case Study: Merchant Onboarding & KYC     | ✅ Done |
+| 9     | Case Study: Payment & Fraud Management    | ✅ Done |
+| 10    | Case Study: Operational Workflow Redesign | ✅ Done |
+| 11    | Case Study: Customer Journey Redesign     | ✅ Done |
 
 
 ---
