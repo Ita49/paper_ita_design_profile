@@ -20,13 +20,33 @@
   /* Text */
   --color-text-primary:    #F2F2F2;
   --color-text-secondary:  #888888;
+  --color-text-muted:      #555555;   /* body on dark bg */
   --color-text-tertiary:   #505050;
+  --color-text-faint:      #333333;   /* footer links */
+  --color-text-ghost:      #2A2A2A;   /* near-invisible on dark */
+  --color-text-caption:    #AAAAAA;   /* captions, inline metadata */
   --color-text-inverse:    #1A1A1C;
 
   /* Accent — warm off-white (editorial, confident) */
   --color-accent:          #EEE9DF;
   --color-accent-soft:     rgba(238, 233, 223, 0.10);
   --color-accent-border:   rgba(238, 233, 223, 0.20);
+
+  /* Accent 2 — lime (active states, highlights, data positive) */
+  --color-accent-2:        #D8F552;
+  --color-accent-2-soft:   rgba(216, 245, 82, 0.10);
+  --color-accent-2-border: rgba(216, 245, 82, 0.20);
+
+  /* Semantic — data / status */
+  --color-positive:   #D8F552;   /* same as accent-2 */
+  --color-success:    #4DB6AC;   /* teal */
+  --color-warning:    #E8A020;   /* amber */
+  --color-error:      #E05050;   /* red */
+
+  /* Semantic soft variants */
+  --color-success-soft:  rgba(77, 182, 172, 0.10);
+  --color-warning-soft:  rgba(232, 160, 32, 0.10);
+  --color-error-soft:    rgba(224, 80, 80, 0.10);
 
   /* Semantic */
   --color-white:       #FFFFFF;
@@ -38,18 +58,34 @@
   --font-display:  "Archivo Black", sans-serif;
   --font-body:     "Inter", sans-serif;
 
-  /* Scale */
-  --text-xs:    11px;
-  --text-sm:    13px;
-  --text-base:  15px;
-  --text-md:    17px;
-  --text-lg:    20px;
-  --text-xl:    24px;
-  --text-2xl:   32px;
-  --text-3xl:   44px;
-  --text-4xl:   64px;
-  --text-5xl:   80px;
-  --text-6xl:   104px;
+  /* Scale — micro / labels */
+  --text-2xs:    9px;    /* dense data / chart labels */
+  --text-xs:     11px;   /* micro caps, eyebrows */
+  --text-xs2:    12px;   /* badges, nav secondary */
+  --text-sm:     13px;   /* secondary body */
+  --text-sm2:    14px;   /* nav links, list items */
+
+  /* Scale — body */
+  --text-base:   15px;   /* primary body */
+  --text-base2:  16px;   /* strong body / nav logo */
+  --text-md:     17px;   /* body lead */
+  --text-md2:    18px;   /* intro copy */
+
+  /* Scale — headings */
+  --text-lg:     20px;   /* section eyebrow */
+  --text-xl:     22px;   /* card heading */
+  --text-2xl:    24px;   /* sub-section heading */
+  --text-3xl:    28px;   /* stat number */
+  --text-4xl:    32px;   /* stat display */
+  --text-5xl:    36px;   /* mid heading */
+  --text-6xl:    44px;   /* section heading */
+  --text-7xl:    48px;   /* section heading alt */
+  --text-8xl:    64px;   /* page heading */
+  --text-9xl:    72px;   /* hero sub */
+  --text-10xl:   80px;   /* hero */
+  --text-11xl:   92px;   /* hero large */
+  --text-12xl:   104px;  /* jumbo display */
+
 
   /* Weight */
   --fw-regular:  400;
@@ -65,36 +101,50 @@
   --lh-relaxed:  1.65;
 
   /* Letter spacing */
-  --ls-tight:    -0.04em;
-  --ls-snug:     -0.02em;
-  --ls-normal:    0;
-  --ls-wide:      0.04em;
-  --ls-wider:     0.08em;
-  --ls-widest:    0.12em;
+  --ls-tightest: -0.04em;   /* jumbo display */
+  --ls-tight:    -0.03em;   /* display headings */
+  --ls-snug:     -0.02em;   /* headings */
+  --ls-normal:    0;        /* body */
+  --ls-wide:      0.04em;   /* spaced labels */
+  --ls-wider:     0.06em;   /* medium caps */
+  --ls-wider-2:   0.08em;   /* standard all-caps */
+  --ls-widest:    0.10em;   /* tight uppercase labels */
+  --ls-widest-2:  0.12em;   /* open uppercase */
 
 
   /* ── Spacing ─────────────────────────────── */
 
-  --space-1:   4px;
-  --space-2:   8px;
-  --space-3:   12px;
-  --space-4:   16px;
-  --space-5:   24px;
-  --space-6:   32px;
-  --space-7:   48px;
-  --space-8:   64px;
-  --space-9:   80px;
-  --space-10:  96px;
-  --space-11:  120px;
-  --space-12:  160px;
+  --space-1:    4px;
+  --space-1-5:  6px;     /* tight component gaps */
+  --space-2:    8px;
+  --space-2-5:  10px;    /* dense item padding */
+  --space-3:    12px;
+  --space-3-5:  14px;
+  --space-4:    16px;
+  --space-4-5:  18px;
+  --space-5:    24px;
+  --space-5-5:  28px;
+  --space-6:    32px;
+  --space-6-5:  40px;    /* card section sub-gap */
+  --space-7:    48px;
+  --space-8:    64px;
+  --space-8-5:  72px;    /* nav-adjacent spacing */
+  --space-9:    80px;
+  --space-10:   96px;
+  --space-11:   120px;
+  --space-12:   160px;
 
 
   /* ── Border Radius ───────────────────────── */
 
+  --radius-xs:   2px;    /* chart bars, tiny chips */
   --radius-sm:   4px;
+  --radius-sm2:  6px;    /* small tags */
   --radius-md:   8px;
+  --radius-md2:  10px;   /* input fields */
   --radius-lg:   12px;
   --radius-xl:   16px;
+  --radius-xl2:  20px;   /* large cards */
   --radius-2xl:  24px;
   --radius-3xl:  32px;
   --radius-pill: 9999px;

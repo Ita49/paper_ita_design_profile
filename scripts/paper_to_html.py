@@ -107,7 +107,7 @@ HTML_TEMPLATE = '''\
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
   <style>
     * {{ margin: 0; padding: 0; box-sizing: border-box; }}
-    body {{ background: #0b0b0b; }}
+    body {{ background: #1A1A1C; }}
     .screen-root {{ display: flex; justify-content: center; }}
   </style>
 </head>
