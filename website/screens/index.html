@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Screens — Ita Okponung</title>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0b0b0b; font-family: "Inter", sans-serif; color: #888; padding: 60px 80px; }
+    h1 { font-family: "Archivo Black", sans-serif; font-size: 28px; color: #f2f2f2; letter-spacing: -0.02em; margin-bottom: 8px; }
+    p { font-size: 13px; line-height: 20px; margin-bottom: 48px; color: #505050; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+    a.card {
+      display: block; text-decoration: none;
+      background: #141414; border: 1px solid #ffffff0d; border-radius: 16px;
+      padding: 28px 28px 24px;
+      transition: border-color 0.15s;
+    }
+    a.card:hover { border-color: #ffffff22; }
+    .tag { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #333; margin-bottom: 14px; }
+    .name { font-family: "Archivo Black", sans-serif; font-size: 16px; color: #f2f2f2; letter-spacing: -0.01em; line-height: 20px; }
+    .hint { font-size: 12px; color: #333; margin-top: 6px; }
+  </style>
+</head>
+<body>
+  <h1>Screens</h1>
+  <p>Open any file to preview and edit. Save → ask Claude to push changes back to Paper.</p>
+
+  <div class="grid">
+    <a class="card" href="home.html">
+      <div class="tag">Page</div>
+      <div class="name">Home — Landing Page</div>
+      <div class="hint">home.html</div>
+    </a>
+    <a class="card" href="work.html">
+      <div class="tag">Page</div>
+      <div class="name">Work — Case Studies</div>
+      <div class="hint">work.html</div>
+    </a>
+    <a class="card" href="about.html">
+      <div class="tag">Page</div>
+      <div class="name">About</div>
+      <div class="hint">about.html</div>
+    </a>
+    <a class="card" href="process.html">
+      <div class="tag">Page</div>
+      <div class="name">Process</div>
+      <div class="hint">process.html</div>
+    </a>
+    <a class="card" href="contact.html">
+      <div class="tag">Page</div>
+      <div class="name">Contact</div>
+      <div class="hint">contact.html</div>
+    </a>
+    <a class="card" href="case-risk.html">
+      <div class="tag">Case Study</div>
+      <div class="name">Risk & Compliance Dashboard</div>
+      <div class="hint">case-risk.html</div>
+    </a>
+    <a class="card" href="case-kyc.html">
+      <div class="tag">Case Study</div>
+      <div class="name">Merchant Onboarding & KYC</div>
+      <div class="hint">case-kyc.html</div>
+    </a>
+    <a class="card" href="case-payment.html">
+      <div class="tag">Case Study</div>
+      <div class="name">Payment & Fraud Management</div>
+      <div class="hint">case-payment.html</div>
+    </a>
+    <a class="card" href="case-workflow.html">
+      <div class="tag">Case Study</div>
+      <div class="name">Operational Workflow Redesign</div>
+      <div class="hint">case-workflow.html</div>
+    </a>
+    <a class="card" href="case-journey.html">
+      <div class="tag">Case Study</div>
+      <div class="name">Customer Journey Redesign</div>
+      <div class="hint">case-journey.html</div>
+    </a>
+  </div>
+</body>
+</html>

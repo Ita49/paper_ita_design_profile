@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case Study — Payment & Fraud Management — Ita Okponung</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0b0b0b; }
+    .screen-root { display: flex; justify-content: center; }
+  </style>
+</head>
+<body>
+  <div class="screen-root">
+<div style="background-color: #1A1A1C; box-sizing: border-box; display: flex; flex-direction: column; font-size: 12px; font-synthesis: none; line-height: 16px; -moz-osx-font-smoothing: grayscale; overflow: clip; -webkit-font-smoothing: antialiased">
+      <div style="align-items: center; border-bottom-color: #FFFFFF12; border-bottom-style: solid; border-bottom-width: 1px; box-sizing: border-box; display: flex; flex-shrink: 0; height: 72px; justify-content: space-between; padding-inline: 80px; width: 1440px">
+        <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 16px; letter-spacing: -0.02em; line-height: 20px">
+          Ita Okponung
+        </div>
+        <div style="align-items: center; box-sizing: border-box; display: flex; gap: 32px">
+          <div style="box-sizing: border-box; color: #EEE9DF; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 14px; line-height: 18px">
+            Work
+          </div>
+          <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 14px; line-height: 18px">
+            About
+          </div>
+          <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 14px; line-height: 18px">
+            Process
+          </div>
+          <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 14px; line-height: 18px">
+            Contact
+          </div>
+          <div style="background-color: #F2F2F2; border-radius: calc(infinity * 1px); box-sizing: border-box; padding-block: 8px; padding-inline: 18px">
+            <div style="box-sizing: border-box; color: #1A1A1C; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 13px; font-weight: 500; line-height: 16px">
+              Get in touch
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="align-items: flex-start; box-sizing: border-box; display: flex; flex-shrink: 0; gap: 64px; padding-bottom: 72px; padding-left: 80px; padding-right: 80px; padding-top: 64px; width: 1440px">
+        <div style="box-sizing: border-box; display: flex; flex-basis: 0%; flex-direction: column; flex-grow: 1; flex-shrink: 1; gap: 32px; min-width: 0px">
+          <div style="align-items: center; box-sizing: border-box; display: flex; gap: 8px">
+            <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 13px; line-height: 16px">
+              Work
+            </div>
+            <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 13px; line-height: 16px">
+              →
+            </div>
+            <div style="box-sizing: border-box; color: #888888; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 13px; line-height: 16px">
+              Payment & Fraud Management
+            </div>
+          </div>
+          <div style="box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 8px">
+            <div style="background-color: #EEE9DF0F; border-color: #EEE9DF33; border-radius: calc(infinity * 1px); border-style: solid; border-width: 1px; box-sizing: border-box; padding-block: 4px; padding-inline: 12px">
+              <div style="box-sizing: border-box; color: #EEE9DF; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 11px; letter-spacing: 0.04em; line-height: 14px">
+                Service Design
+              </div>
+            </div>
+            <div style="border-color: #FFFFFF1A; border-radius: calc(infinity * 1px); border-style: solid; border-width: 1px; box-sizing: border-box; padding-block: 4px; padding-inline: 12px">
+              <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 11px; letter-spacing: 0.04em; line-height: 14px">
+                Fintech
+              </div>
+            </div>
+            <div style="border-color: #FFFFFF1A; border-radius: calc(infinity * 1px); border-style: solid; border-width: 1px; box-sizing: border-box; padding-block: 4px; padding-inline: 12px">
+              <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 11px; letter-spacing: 0.04em; line-height: 14px">
+                Admin Tool
+              </div>
+            </div>
+          </div>
+          <div style="box-sizing: border-box; color: #F2F2F2; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 64px; letter-spacing: -0.03em; line-height: 68px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px">
+            Payment & Fraud Management System
+          </div>
+          <div style="box-sizing: border-box; color: #888888; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 17px; line-height: 28px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; max-width: 480px">
+            Replacing disconnected transaction logs and manual chargeback reviews with a unified, real-time fraud detection and case management platform.
+          </div>
+          <div style="border-top-color: #FFFFFF12; border-top-style: solid; border-top-width: 1px; box-sizing: border-box; display: flex; gap: 40px; padding-top: 8px">
+            <div style="box-sizing: border-box; display: flex; flex-direction: column; gap: 4px">
+              <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 11px; letter-spacing: 0.08em; line-height: 14px; text-transform: uppercase">
+                Company
+              </div>
+              <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 14px; line-height: 18px">
+                Wakanow Group
+              </div>
+            </div>
+            <div style="box-sizing: border-box; display: flex; flex-direction: column; gap: 4px">
+              <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 11px; letter-spacing: 0.08em; line-height: 14px; text-transform: uppercase">
+                Role
+              </div>
+              <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 14px; line-height: 18px">
+                Product Operations & Systems Designer
+              </div>
+            </div>
+            <div style="box-sizing: border-box; display: flex; flex-direction: column; gap: 4px">
+              <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 11px; letter-spacing: 0.08em; line-height: 14px; text-transform: uppercase">
+                Period
+              </div>
+              <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 14px; line-height: 18px">
+                2015 – 2018
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="background-color: #232326; border-color: #FFFFFF12; border-radius: 16px; border-style: solid; border-width: 1px; box-sizing: border-box; flex-shrink: 0; overflow: clip; width: 520px">
+          <div style="align-items: center; background-color: #2C2C30; border-bottom-color: #FFFFFF12; border-bottom-style: solid; border-bottom-width: 1px; box-sizing: border-box; display: flex; gap: 8px; padding-block: 12px; padding-inline: 16px">
+            <div style="background-color: #FFFFFF1F; border-radius: calc(infinity * 1px); box-sizing: border-box; flex-shrink: 0; height: 8px; width: 8px" />
+            <div style="background-color: #FFFFFF1F; border-radius: calc(infinity * 1px); box-sizing: border-box; flex-shrink: 0; height: 8px; width: 8px" />
+            <div style="background-color: #FFFFFF1F; border-radius: calc(infinity * 1px); box-sizing: border-box; flex-shrink: 0; height: 8px; width: 8px" />
+            <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 11px; line-height: 14px; margin-left: 8px">
+              Fraud Ops — Wakanow Payments
+            </div>
+          </div>
+          <div style="box-sizing: border-box; display: flex; flex-direction: column; gap: 12px; padding-block: 20px; padding-inline: 20px">
+            <div style="box-sizing: border-box; display: flex; gap: 10px">
+              <div style="background-color: #2C2C30; border-radius: 12px; box-sizing: border-box; display: flex; flex-basis: 0%; flex-direction: column; flex-grow: 1; flex-shrink: 1; gap: 4px; padding-block: 14px; padding-inline: 16px">
+                <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 10px; letter-spacing: 0.08em; line-height: 12px; text-transform: uppercase">
+                  Today's volume
+                </div>
+                <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 22px; line-height: 28px">
+                  ₦ 42.6M
+                </div>
+                <div style="box-sizing: border-box; color: #888888; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 10px; line-height: 12px">
+                  847 transactions
+                </div>
+              </div>
+              <div style="background-color: #2C2C30; border-radius: 12px; box-sizing: border-box; display: flex; flex-basis: 0%; flex-direction: column; flex-grow: 1; flex-shrink: 1; gap: 4px; padding-block: 14px; padding-inline: 16px">
+                <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 10px; letter-spacing: 0.08em; line-height: 12px; text-transform: uppercase">
+                  Flagged
+                </div>
+                <div style="box-sizing: border-box; color: #E8A020; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 22px; line-height: 28px">
+                  14
+                </div>
+                <div style="box-sizing: border-box; color: #888888; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 10px; line-height: 12px">
+                  needs review
+                </div>
+              </div>
+              <div style="background-color: #2C2C30; border-radius: 12px; box-sizing: border-box; display: flex; flex-basis: 0%; flex-direction: column; flex-grow: 1; flex-shrink: 1; gap: 4px; padding-block: 14px; padding-inline: 16px">
+                <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 10px; letter-spacing: 0.08em; line-height: 12px; text-transform: uppercase">
+                  Chargeback rate
+                </div>
+                <div style="box-sizing: border-box; color: #EEE9DF; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 22px; line-height: 28px">
+                  0.6%
+                </div>
+                <div style="box-sizing: border-box; color: #888888; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 10px; line-height: 12px">
+                  ↓ from 2.8%
+                </div>
+              </div>
+            </div>
+            <div style="background-color: #2C2C30; border-radius: 12px; box-sizing: border-box; overflow: clip">
+              <div style="align-items: center; border-bottom-color: #FFFFFF0F; border-bottom-style: solid; border-bottom-width: 1px; box-sizing: border-box; display: flex; justify-content: space-between; padding-block: 10px; padding-inline: 14px">
+                <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 10px; letter-spacing: 0.08em; line-height: 12px; text-transform: uppercase">
+                  Live Transactions
+                </div>
+                <div style="background-color: #E8505026; border-radius: calc(infinity * 1px); box-sizing: border-box; padding-block: 2px; padding-inline: 10px">
+                  <div style="box-sizing: border-box; color: #E05050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 10px; line-height: 12px">
+                    3 blocked
+                  </div>
+                </div>
+              </div>
+              <div style="align-items: center; background-color: #E8A0200F; border-bottom-color: #FFFFFF0A; border-bottom-style: solid; border-bottom-width: 1px; box-sizing: border-box; display: flex; gap: 10px; padding-block: 10px; padding-inline: 14px">
+                <div style="background-color: #E8A020; border-radius: calc(infinity * 1px); box-sizing: border-box; flex-shrink: 0; height: 6px; width: 6px" />
+                <div style="box-sizing: border-box; display: flex; flex-basis: 0%; flex-direction: column; flex-grow: 1; flex-shrink: 1; gap: 2px; min-width: 0px">
+                  <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 12px; font-weight: 500; line-height: 16px">
+                    Lagos → Dubai · 3 PAX
+                  </div>
+                  <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 10px; line-height: 12px">
+                    Card ending 4471 · High velocity
+                  </div>
+                </div>
+                <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 12px; line-height: 16px">
+                  ₦ 847,200
+                </div>
+                <div style="background-color: #E8A02026; border-radius: calc(infinity * 1px); box-sizing: border-box; flex-shrink: 0; padding-block: 3px; padding-inline: 10px">
+                  <div style="box-sizing: border-box; color: #E8A020; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 10px; line-height: 12px">
+                    Flagged
+                  </div>
+                </div>
+              </div>
+              <div style="align-items: center; border-bottom-color: #FFFFFF0A; border-bottom-style: solid; border-bottom-width: 1px; box-sizing: border-box; display: flex; gap: 10px; padding-block: 10px; padding-inline: 14px">
+                <div style="background-color: #EEE9DF; border-radius: calc(infinity * 1px); box-sizing: border-box; flex-shrink: 0; height: 6px; width: 6px" />
+                <div style="box-sizing: border-box; display: flex; flex-basis: 0%; flex-direction: column; flex-grow: 1; flex-shrink: 1; gap: 2px; min-width: 0px">
+                  <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 12px; font-weight: 500; line-height: 16px">
+                    Abuja → London · 1 PAX
+                  </div>
+                  <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 10px; line-height: 12px">
+                    Card ending 9832 · Known user
+                  </div>
+                </div>
+                <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 12px; line-height: 16px">
+                  ₦ 312,500
+                </div>
+                <div style="background-color: #EEE9DF1A; border-radius: calc(infinity * 1px); box-sizing: border-box; flex-shrink: 0; padding-block: 3px; padding-inline: 10px">
+                  <div style="box-sizing: border-box; color: #EEE9DF; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 10px; line-height: 12px">
+                    Clear
+                  </div>
+                </div>
+              </div>
+              <div style="align-items: center; border-bottom-color: #FFFFFF0A; border-bottom-style: solid; border-bottom-width: 1px; box-sizing: border-box; display: flex; gap: 10px; padding-block: 10px; padding-inline: 14px">
+                <div style="background-color: #E05050; border-radius: calc(infinity * 1px); box-sizing: border-box; flex-shrink: 0; height: 6px; width: 6px" />
+                <div style="box-sizing: border-box; display: flex; flex-basis: 0%; flex-direction: column; flex-grow: 1; flex-shrink: 1; gap: 2px; min-width: 0px">
+                  <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 12px; font-weight: 500; line-height: 16px">
+                    Kano → Dubai · 6 PAX
+                  </div>
+                  <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 10px; line-height: 12px">
+                    New card · BIN mismatch
+                  </div>
+                </div>
+                <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 12px; line-height: 16px">
+                  ₦ 1,240,000
+                </div>
+                <div style="background-color: #E0505026; border-radius: calc(infinity * 1px); box-sizing: border-box; flex-shrink: 0; padding-block: 3px; padding-inline: 10px">
+                  <div style="box-sizing: border-box; color: #E05050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 10px; line-height: 12px">
+                    Blocked
+                  </div>
+                </div>
+              </div>
+              <div style="align-items: center; box-sizing: border-box; display: flex; gap: 10px; padding-block: 10px; padding-inline: 14px">
+                <div style="background-color: #EEE9DF; border-radius: calc(infinity * 1px); box-sizing: border-box; flex-shrink: 0; height: 6px; width: 6px" />
+                <div style="box-sizing: border-box; display: flex; flex-basis: 0%; flex-direction: column; flex-grow: 1; flex-shrink: 1; gap: 2px; min-width: 0px">
+                  <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 12px; font-weight: 500; line-height: 16px">
+                    Lagos → Accra · 2 PAX
+                  </div>
+                  <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 10px; line-height: 12px">
+                    Card ending 2210 · Returning
+                  </div>
+                </div>
+                <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 12px; line-height: 16px">
+                  ₦ 198,400
+                </div>
+                <div style="background-color: #EEE9DF1A; border-radius: calc(infinity * 1px); box-sizing: border-box; flex-shrink: 0; padding-block: 3px; padding-inline: 10px">
+                  <div style="box-sizing: border-box; color: #EEE9DF; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 10px; line-height: 12px">
+                    Clear
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="border-top-color: #FFFFFF12; border-top-style: solid; border-top-width: 1px; box-sizing: border-box; display: flex; flex-direction: column; flex-shrink: 0; gap: 48px; padding-block: 80px; padding-inline: 80px; width: 1440px">
+        <div style="align-items: center; box-sizing: border-box; display: flex; gap: 16px">
+          <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 11px; letter-spacing: 0.1em; line-height: 14px; text-transform: uppercase">
+            01 — Context
+          </div>
+          <div style="background-color: #FFFFFF0F; box-sizing: border-box; flex-basis: 0%; flex-grow: 1; flex-shrink: 1; height: 1px" />
+        </div>
+        <div style="align-items: flex-start; box-sizing: border-box; display: flex; gap: 80px">
+          <div style="box-sizing: border-box; display: flex; flex-basis: 0%; flex-direction: column; flex-grow: 1; flex-shrink: 1; gap: 32px; min-width: 0px">
+            <div style="box-sizing: border-box; display: flex; flex-direction: column; gap: 12px">
+              <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 32px; letter-spacing: -0.02em; line-height: 38px">
+                Background
+              </div>
+              <div style="box-sizing: border-box; color: #888888; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 15px; line-height: 26px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px">
+                Wakanow Group is one of Africa's largest online travel companies, processing thousands of flight and hotel bookings daily across Nigeria and the wider West African market. By 2015, the business was growing fast — but payment fraud and chargebacks were scaling with it.
+              </div>
+              <div style="box-sizing: border-box; color: #888888; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 15px; line-height: 26px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px">
+                Fraud analysts worked from raw transaction export files, reviewed disputes via email chains, and had no way to correlate patterns across accounts or flag repeat offenders in real time. I was brought in to map the end-to-end payment and fraud operations, then redesign the monitoring and case management workflow.
+              </div>
+            </div>
+            <div style="box-sizing: border-box; display: flex; flex-direction: column; gap: 12px">
+              <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 20px; letter-spacing: -0.02em; line-height: 24px">
+                Constraints
+              </div>
+              <div style="box-sizing: border-box; display: flex; flex-direction: column; gap: 8px">
+                <div style="align-items: flex-start; box-sizing: border-box; display: flex; gap: 12px">
+                  <div style="background-color: #505050; border-radius: calc(infinity * 1px); box-sizing: border-box; flex-shrink: 0; height: 4px; margin-top: 11px; width: 4px" />
+                  <div style="box-sizing: border-box; color: #888888; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 14px; line-height: 24px">
+                    Multiple payment gateways (local and international) with different data schemas — no unified transaction model
+                  </div>
+                </div>
+                <div style="align-items: flex-start; box-sizing: border-box; display: flex; gap: 12px">
+                  <div style="background-color: #505050; border-radius: calc(infinity * 1px); box-sizing: border-box; flex-shrink: 0; height: 4px; margin-top: 11px; width: 4px" />
+                  <div style="box-sizing: border-box; color: #888888; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 14px; line-height: 24px">
+                    Chargeback dispute windows of 45–120 days depending on card network — time-sensitive decisions
+                  </div>
+                </div>
+                <div style="align-items: flex-start; box-sizing: border-box; display: flex; gap: 12px">
+                  <div style="background-color: #505050; border-radius: calc(infinity * 1px); box-sizing: border-box; flex-shrink: 0; height: 4px; margin-top: 11px; width: 4px" />
+                  <div style="box-sizing: border-box; color: #888888; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 14px; line-height: 24px">
+                    Fraud team of 4 — tooling had to maximise individual analyst throughput, not assume headcount growth
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="background-color: #232326; border-color: #FFFFFF12; border-radius: 16px; border-style: solid; border-width: 1px; box-sizing: border-box; display: flex; flex-direction: column; flex-shrink: 0; gap: 24px; padding-block: 36px; padding-inline: 36px; width: 400px">
+            <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 11px; letter-spacing: 0.1em; line-height: 14px; text-transform: uppercase">
+              Problem Statement
+            </div>
+            <div style="box-sizing: border-box; color: #EEE9DF; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 20px; letter-spacing: -0.01em; line-height: 30px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px">
+              "Fraud analysts had no shared intelligence. Each analyst worked from a private spreadsheet — patterns were invisible, response times were slow, and chargebacks were reviewed after dispute windows had already closed."
+            </div>
+            <div style="border-top-color: #FFFFFF12; border-top-style: solid; border-top-width: 1px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px; padding-top: 20px">
+              <div style="align-items: baseline; box-sizing: border-box; display: flex; justify-content: space-between">
+                <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 32px; line-height: 40px">
+                  2.8%
+                </div>
+                <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 13px; line-height: 16px; text-align: right; white-space: pre-wrap">
+                  chargeback rate<br />at baseline (threshold <1%)
+                </div>
+              </div>
+              <div style="align-items: baseline; box-sizing: border-box; display: flex; justify-content: space-between">
+                <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 32px; line-height: 40px">
+                  48h+
+                </div>
+                <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 13px; line-height: 16px; text-align: right; white-space: pre-wrap">
+                  average fraud<br />detection lag
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="border-top-color: #FFFFFF12; border-top-style: solid; border-top-width: 1px; box-sizing: border-box; display: flex; flex-direction: column; flex-shrink: 0; gap: 48px; padding-block: 80px; padding-inline: 80px; width: 1440px">
+        <div style="align-items: center; box-sizing: border-box; display: flex; gap: 16px">
+          <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 11px; letter-spacing: 0.1em; line-height: 14px; text-transform: uppercase">
+            02 — Discovery & Research
+          </div>
+          <div style="background-color: #FFFFFF0F; box-sizing: border-box; flex-basis: 0%; flex-grow: 1; flex-shrink: 1; height: 1px" />
+        </div>
+        <div style="align-items: flex-start; box-sizing: border-box; display: flex; gap: 80px">
+          <div style="box-sizing: border-box; display: flex; flex-basis: 0%; flex-direction: column; flex-grow: 1; flex-shrink: 1; gap: 16px">
+            <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 32px; letter-spacing: -0.02em; line-height: 38px">
+              Mapping the fraud lifecycle end to end
+            </div>
+            <div style="box-sizing: border-box; color: #888888; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 15px; line-height: 26px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px">
+              I ran a three-week discovery sprint embedded with the fraud and payments operations team. Rather than starting with screens, I started with a service blueprint — mapping every touchpoint across the transaction, detection, dispute, and resolution lifecycle across four swimlanes: customer, analyst, finance, and payment gateway.
+            </div>
+          </div>
+          <div style="align-content: flex-start; box-sizing: border-box; display: flex; flex-shrink: 0; flex-wrap: wrap; gap: 8px; padding-top: 8px; width: 380px">
+            <div style="border-color: #FFFFFF1A; border-radius: calc(infinity * 1px); border-style: solid; border-width: 1px; box-sizing: border-box; padding-block: 6px; padding-inline: 14px">
+              <div style="box-sizing: border-box; color: #888888; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 12px; line-height: 16px">
+                Analyst shadowing
+              </div>
+            </div>
+            <div style="border-color: #FFFFFF1A; border-radius: calc(infinity * 1px); border-style: solid; border-width: 1px; box-sizing: border-box; padding-block: 6px; padding-inline: 14px">
+              <div style="box-sizing: border-box; color: #888888; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 12px; line-height: 16px">
+                Transaction data analysis
+              </div>
+            </div>
+            <div style="border-color: #FFFFFF1A; border-radius: calc(infinity * 1px); border-style: solid; border-width: 1px; box-sizing: border-box; padding-block: 6px; padding-inline: 14px">
+              <div style="box-sizing: border-box; color: #888888; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 12px; line-height: 16px">
+                Service blueprint
+              </div>
+            </div>
+            <div style="border-color: #FFFFFF1A; border-radius: calc(infinity * 1px); border-style: solid; border-width: 1px; box-sizing: border-box; padding-block: 6px; padding-inline: 14px">
+              <div style="box-sizing: border-box; color: #888888; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 12px; line-height: 16px">
+                Chargeback log audit
+              </div>
+            </div>
+            <div style="border-color: #FFFFFF1A; border-radius: calc(infinity * 1px); border-style: solid; border-width: 1px; box-sizing: border-box; padding-block: 6px; padding-inline: 14px">
+              <div style="box-sizing: border-box; color: #888888; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 12px; line-height: 16px">
+                Stakeholder interviews
+              </div>
+            </div>
+            <div style="border-color: #FFFFFF1A; border-radius: calc(infinity * 1px); border-style: solid; border-width: 1px; box-sizing: border-box; padding-block: 6px; padding-inline: 14px">
+              <div style="box-sizing: border-box; color: #888888; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 12px; line-height: 16px">
+                Card network review
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="box-sizing: border-box; display: flex; gap: 16px">
+          <div style="background-color: #232326; border-color: #FFFFFF0F; border-radius: 16px; border-style: solid; border-width: 1px; box-sizing: border-box; display: flex; flex-basis: 0%; flex-direction: column; flex-grow: 1; flex-shrink: 1; gap: 16px; padding-block: 28px; padding-inline: 28px">
+            <div style="box-sizing: border-box; color: #EEE9DF; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 13px; letter-spacing: 0.04em; line-height: 16px; text-transform: uppercase">
+              Insight 01
+            </div>
+            <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 18px; letter-spacing: -0.01em; line-height: 26px">
+              No shared fraud intelligence
+            </div>
+            <div style="box-sizing: border-box; color: #888888; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 13px; line-height: 22px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px">
+              Each analyst maintained a personal spreadsheet. A card flagged by one analyst as compromised was invisible to colleagues — repeat offenders slipped through repeatedly across different analysts' queues.
+            </div>
+          </div>
+          <div style="background-color: #232326; border-color: #FFFFFF0F; border-radius: 16px; border-style: solid; border-width: 1px; box-sizing: border-box; display: flex; flex-basis: 0%; flex-direction: column; flex-grow: 1; flex-shrink: 1; gap: 16px; padding-block: 28px; padding-inline: 28px">
+            <div style="box-sizing: border-box; color: #EEE9DF; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 13px; letter-spacing: 0.04em; line-height: 16px; text-transform: uppercase">
+              Insight 02
+            </div>
+            <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 18px; letter-spacing: -0.01em; line-height: 26px">
+              Disputes reviewed after deadlines
+            </div>
+            <div style="box-sizing: border-box; color: #888888; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 13px; line-height: 22px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px">
+              Chargeback notifications arrived via email and were manually triaged. Analysis showed 23% of disputes were actioned after the card network's response window had closed — automatic losses.
+            </div>
+          </div>
+          <div style="background-color: #232326; border-color: #FFFFFF0F; border-radius: 16px; border-style: solid; border-width: 1px; box-sizing: border-box; display: flex; flex-basis: 0%; flex-direction: column; flex-grow: 1; flex-shrink: 1; gap: 16px; padding-block: 28px; padding-inline: 28px">
+            <div style="box-sizing: border-box; color: #EEE9DF; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 13px; letter-spacing: 0.04em; line-height: 16px; text-transform: uppercase">
+              Insight 03
+            </div>
+            <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 18px; letter-spacing: -0.01em; line-height: 26px">
+              Blunt rules blocked real bookings
+            </div>
+            <div style="box-sizing: border-box; color: #888888; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 13px; line-height: 22px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px">
+              Velocity-based rules were applied globally — a card used twice in 24 hours was blocked regardless of context. High-value legitimate travellers were declined at the same rate as actual fraud attempts.
+            </div>
+          </div>
+          <div style="background-color: #232326; border-color: #FFFFFF0F; border-radius: 16px; border-style: solid; border-width: 1px; box-sizing: border-box; display: flex; flex-basis: 0%; flex-direction: column; flex-grow: 1; flex-shrink: 1; gap: 16px; padding-block: 28px; padding-inline: 28px">
+            <div style="box-sizing: border-box; color: #EEE9DF; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 13px; letter-spacing: 0.04em; line-height: 16px; text-transform: uppercase">
+              Insight 04
+            </div>
+            <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 18px; letter-spacing: -0.01em; line-height: 26px">
+              Two distinct threat types, one response
+            </div>
+            <div style="box-sizing: border-box; color: #888888; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 13px; line-height: 22px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px">
+              Card fraud (stolen card details) and account takeover (compromised login) required fundamentally different detection signals and response workflows — but the existing process treated them identically.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="border-top-color: #FFFFFF12; border-top-style: solid; border-top-width: 1px; box-sizing: border-box; display: flex; flex-direction: column; flex-shrink: 0; gap: 48px; padding-block: 80px; padding-inline: 80px; width: 1440px">
+        <div style="align-items: center; box-sizing: border-box; display: flex; gap: 16px">
+          <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 11px; letter-spacing: 0.1em; line-height: 14px; text-transform: uppercase">
+            03 — Design Process
+          </div>
+          <div style="background-color: #FFFFFF0F; box-sizing: border-box; flex-basis: 0%; flex-grow: 1; flex-shrink: 1; height: 1px" />
+        </div>
+        <div style="box-sizing: border-box; display: flex; gap: 12px">
+          <div style="background-color: #232326; border-color: #FFFFFF0F; border-radius: 16px; border-style: solid; border-width: 1px; box-sizing: border-box; display: flex; flex-basis: 0%; flex-direction: column; flex-grow: 1; flex-shrink: 1; gap: 20px; padding-block: 28px; padding-inline: 24px">
+            <div style="align-items: center; box-sizing: border-box; display: flex; justify-content: space-between">
+              <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 20px; letter-spacing: -0.01em; line-height: 24px">
+                Discover
+              </div>
+              <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 11px; line-height: 14px">
+                01
+              </div>
+            </div>
+            <div style="background-color: #EEE9DF26; border-radius: calc(infinity * 1px); box-sizing: border-box; flex-shrink: 0; height: 2px" />
+            <div style="box-sizing: border-box; color: #888888; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 12px; line-height: 20px">
+              Analyst shadowing across 3 shifts. Chargeback log audit (6 months of data). Service blueprint across customer, analyst, finance, and gateway swimlanes.
+            </div>
+            <div style="box-sizing: border-box; display: flex; flex-direction: column; gap: 6px">
+              <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 10px; letter-spacing: 0.08em; line-height: 12px; text-transform: uppercase">
+                Outputs
+              </div>
+              <div style="box-sizing: border-box; color: #888888; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 12px; line-height: 16px">
+                Service blueprint · Fraud taxonomy · HMW statements
+              </div>
+            </div>
+          </div>
+          <div style="background-color: #232326; border-color: #FFFFFF0F; border-radius: 16px; border-style: solid; border-width: 1px; box-sizing: border-box; display: flex; flex-basis: 0%; flex-direction: column; flex-grow: 1; flex-shrink: 1; gap: 20px; padding-block: 28px; padding-inline: 24px">
+            <div style="align-items: center; box-sizing: border-box; display: flex; justify-content: space-between">
+              <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 20px; letter-spacing: -0.01em; line-height: 24px">
+                Define
+              </div>
+              <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 11px; line-height: 14px">
+                02
+              </div>
+            </div>
+            <div style="background-color: #EEE9DF26; border-radius: calc(infinity * 1px); box-sizing: border-box; flex-shrink: 0; height: 2px" />
+            <div style="box-sizing: border-box; color: #888888; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 12px; line-height: 20px">
+              Fraud threat taxonomy (card fraud vs. account takeover). Rule logic mapping with the data engineering team. IA for the monitoring dashboard and case management system.
+            </div>
+            <div style="box-sizing: border-box; display: flex; flex-direction: column; gap: 6px">
+              <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 10px; letter-spacing: 0.08em; line-height: 12px; text-transform: uppercase">
+                Outputs
+              </div>
+              <div style="box-sizing: border-box; color: #888888; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 12px; line-height: 16px">
+                Threat taxonomy · Rule logic map · IA diagram
+              </div>
+            </div>
+          </div>
+          <div style="background-color: #232326; border-color: #EEE9DF1F; border-radius: 16px; border-style: solid; border-width: 1px; box-sizing: border-box; display: flex; flex-basis: 0%; flex-direction: column; flex-grow: 1; flex-shrink: 1; gap: 20px; padding-block: 28px; padding-inline: 24px">
+            <div style="align-items: center; box-sizing: border-box; display: flex; justify-content: space-between">
+              <div style="box-sizing: border-box; color: #EEE9DF; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 20px; letter-spacing: -0.01em; line-height: 24px">
+                Design
+              </div>
+              <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 11px; line-height: 14px">
+                03
+              </div>
+            </div>
+            <div style="background-color: #EEE9DF66; border-radius: calc(infinity * 1px); box-sizing: border-box; flex-shrink: 0; height: 2px" />
+            <div style="box-sizing: border-box; color: #888888; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 12px; line-height: 20px">
+              Lo-fi wireframes → hi-fi UI for the monitoring feed, case detail view, and rule builder. Two critique rounds with fraud ops and finance. WCAG AA review for status colour system.
+            </div>
+            <div style="box-sizing: border-box; display: flex; flex-direction: column; gap: 6px">
+              <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 10px; letter-spacing: 0.08em; line-height: 12px; text-transform: uppercase">
+                Outputs
+              </div>
+              <div style="box-sizing: border-box; color: #888888; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 12px; line-height: 16px">
+                Hi-fi prototype · Component spec · Annotation doc
+              </div>
+            </div>
+          </div>
+          <div style="background-color: #232326; border-color: #FFFFFF0F; border-radius: 16px; border-style: solid; border-width: 1px; box-sizing: border-box; display: flex; flex-basis: 0%; flex-direction: column; flex-grow: 1; flex-shrink: 1; gap: 20px; padding-block: 28px; padding-inline: 24px">
+            <div style="align-items: center; box-sizing: border-box; display: flex; justify-content: space-between">
+              <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 20px; letter-spacing: -0.01em; line-height: 24px">
+                Deliver
+              </div>
+              <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 11px; line-height: 14px">
+                04
+              </div>
+            </div>
+            <div style="background-color: #EEE9DF26; border-radius: calc(infinity * 1px); box-sizing: border-box; flex-shrink: 0; height: 2px" />
+            <div style="box-sizing: border-box; color: #888888; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 12px; line-height: 20px">
+              Phased rollout: monitoring feed first, then case management, then rule builder. QA support across two sprints. Fraud team training and onboarding. 30-day post-launch review.
+            </div>
+            <div style="box-sizing: border-box; display: flex; flex-direction: column; gap: 6px">
+              <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 10px; letter-spacing: 0.08em; line-height: 12px; text-transform: uppercase">
+                Outputs
+              </div>
+              <div style="box-sizing: border-box; color: #888888; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 12px; line-height: 16px">
+                Shipped system · Handoff doc · Training guide
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="align-items: flex-start; background-color: #232326; border-color: #FFFFFF0F; border-radius: 16px; border-style: solid; border-width: 1px; box-sizing: border-box; display: flex; gap: 64px; padding-block: 36px; padding-inline: 40px">
+          <div style="box-sizing: border-box; flex-shrink: 0">
+            <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 11px; letter-spacing: 0.1em; line-height: 14px; text-transform: uppercase">
+              Key Decision
+            </div>
+          </div>
+          <div style="box-sizing: border-box; display: flex; flex-basis: 0%; flex-direction: column; flex-grow: 1; flex-shrink: 1; gap: 12px">
+            <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 20px; letter-spacing: -0.01em; line-height: 28px">
+              Data model before UI — fraud taxonomy first
+            </div>
+            <div style="box-sizing: border-box; color: #888888; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 14px; line-height: 24px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px">
+              I resisted pressure to start wireframing early. Until we had agreed on what constituted a "fraud case" — what fields it required, what states it moved through, how card fraud differed from account takeover — any UI would be built on shifting ground. Three weeks of Define work saved what would have been four rounds of design rework when the data model eventually surfaced edge cases.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="border-top-color: #FFFFFF12; border-top-style: solid; border-top-width: 1px; box-sizing: border-box; display: flex; flex-direction: column; flex-shrink: 0; gap: 48px; padding-block: 80px; padding-inline: 80px; width: 1440px">
+        <div style="align-items: center; box-sizing: border-box; display: flex; gap: 16px">
+          <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 11px; letter-spacing: 0.1em; line-height: 14px; text-transform: uppercase">
+            04 — Final Design
+          </div>
+          <div style="background-color: #FFFFFF0F; box-sizing: border-box; flex-basis: 0%; flex-grow: 1; flex-shrink: 1; height: 1px" />
+        </div>
+        <div style="box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+          <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 32px; letter-spacing: -0.02em; line-height: 40px">
+            Fraud Operations Dashboard
+          </div>
+          <div style="box-sizing: border-box; color: #888888; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 15px; line-height: 26px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; max-width: 680px">
+            A unified real-time monitoring feed, case management queue, and rule builder — replacing four separate tools and two email inboxes for a four-person fraud team.
+          </div>
+        </div>
+        <div style="background-color: #232326; border-color: #FFFFFF12; border-radius: 16px; border-style: solid; border-width: 1px; box-sizing: border-box; overflow: clip">
+          <div style="align-items: center; background-color: #2C2C30; border-bottom-color: #FFFFFF12; border-bottom-style: solid; border-bottom-width: 1px; box-sizing: border-box; display: flex; gap: 10px; padding-block: 12px; padding-inline: 20px">
+            <div style="background-color: #FFFFFF1A; border-radius: calc(infinity * 1px); box-sizing: border-box; flex-shrink: 0; height: 9px; width: 9px" />
+            <div style="background-color: #FFFFFF1A; border-radius: calc(infinity * 1px); box-sizing: border-box; flex-shrink: 0; height: 9px; width: 9px" />
+            <div style="background-color: #FFFFFF1A; border-radius: calc(infinity * 1px); box-sizing: border-box; flex-shrink: 0; height: 9px; width: 9px" />
+            <div style="background-color: #36363B; border-radius: 6px; box-sizing: border-box; flex-basis: 0%; flex-grow: 1; flex-shrink: 1; margin-bottom: 0px; margin-left: 16px; margin-right: 16px; margin-top: 0px; padding-block: 5px; padding-inline: 12px">
+              <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 11px; line-height: 14px">
+                fraud.wakanow.com/dashboard
+              </div>
+            </div>
+          </div>
+          <div style="box-sizing: border-box; display: flex; height: 480px">
+            <div style="background-color: #2C2C30; border-right-color: #FFFFFF0F; border-right-style: solid; border-right-width: 1px; box-sizing: border-box; display: flex; flex-direction: column; flex-shrink: 0; gap: 4px; padding-block: 20px; width: 200px">
+              <div style="box-sizing: border-box; margin-bottom: 8px; padding-block: 8px; padding-inline: 16px">
+                <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 13px; line-height: 16px">
+                  Fraud Ops
+                </div>
+              </div>
+              <div style="align-items: center; background-color: #EEE9DF14; border-radius: 6px; box-sizing: border-box; display: flex; justify-content: space-between; margin-bottom: 0px; margin-left: 8px; margin-right: 8px; margin-top: 0px; padding-block: 8px; padding-inline: 16px">
+                <div style="box-sizing: border-box; color: #EEE9DF; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 12px; font-weight: 500; line-height: 16px">
+                  Live Feed
+                </div>
+                <div style="background-color: #E8A020; border-radius: calc(infinity * 1px); box-sizing: border-box; padding-block: 1px; padding-inline: 7px">
+                  <div style="box-sizing: border-box; color: #1A1A1C; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 10px; font-weight: 600; line-height: 12px">
+                    14
+                  </div>
+                </div>
+              </div>
+              <div style="box-sizing: border-box; margin-bottom: 0px; margin-left: 8px; margin-right: 8px; margin-top: 0px; padding-block: 8px; padding-inline: 16px">
+                <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 12px; line-height: 16px">
+                  Case Management
+                </div>
+              </div>
+              <div style="box-sizing: border-box; margin-bottom: 0px; margin-left: 8px; margin-right: 8px; margin-top: 0px; padding-block: 8px; padding-inline: 16px">
+                <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 12px; line-height: 16px">
+                  Rule Builder
+                </div>
+              </div>
+              <div style="box-sizing: border-box; margin-bottom: 0px; margin-left: 8px; margin-right: 8px; margin-top: 0px; padding-block: 8px; padding-inline: 16px">
+                <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 12px; line-height: 16px">
+                  Chargebacks
+                </div>
+              </div>
+              <div style="box-sizing: border-box; margin-bottom: 0px; margin-left: 8px; margin-right: 8px; margin-top: 0px; padding-block: 8px; padding-inline: 16px">
+                <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 12px; line-height: 16px">
+                  Reports
+                </div>
+              </div>
+              <div style="border-top-color: #FFFFFF0F; border-top-style: solid; border-top-width: 1px; box-sizing: border-box; display: flex; flex-direction: column; gap: 10px; margin-top: auto; padding-block: 16px; padding-inline: 16px">
+                <div style="box-sizing: border-box; display: flex; flex-direction: column; gap: 2px">
+                  <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 10px; letter-spacing: 0.08em; line-height: 12px; text-transform: uppercase">
+                    Chargeback rate
+                  </div>
+                  <div style="box-sizing: border-box; color: #EEE9DF; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 18px; line-height: 22px">
+                    0.6%
+                  </div>
+                </div>
+                <div style="box-sizing: border-box; display: flex; flex-direction: column; gap: 2px">
+                  <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 10px; letter-spacing: 0.08em; line-height: 12px; text-transform: uppercase">
+                    False positive
+                  </div>
+                  <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 18px; line-height: 22px">
+                    1.3%
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="box-sizing: border-box; display: flex; flex-basis: 0%; flex-direction: column; flex-grow: 1; flex-shrink: 1; gap: 16px; overflow: clip; padding-block: 24px; padding-inline: 24px">
+              <div style="align-items: center; box-sizing: border-box; display: flex; justify-content: space-between">
+                <div style="align-items: center; box-sizing: border-box; display: flex; gap: 12px">
+                  <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 16px; line-height: 20px">
+                    Live Transaction Feed
+                  </div>
+                  <div style="background-color: #EEE9DF; border-radius: calc(infinity * 1px); box-sizing: border-box; flex-shrink: 0; height: 8px; width: 8px" />
+                  <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 12px; line-height: 16px">
+                    Real-time
+                  </div>
+                </div>
+                <div style="box-sizing: border-box; display: flex; gap: 8px">
+                  <div style="border-color: #FFFFFF1A; border-radius: calc(infinity * 1px); border-style: solid; border-width: 1px; box-sizing: border-box; padding-block: 5px; padding-inline: 14px">
+                    <div style="box-sizing: border-box; color: #888888; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 11px; line-height: 14px">
+                      All types
+                    </div>
+                  </div>
+                  <div style="border-color: #FFFFFF1A; border-radius: calc(infinity * 1px); border-style: solid; border-width: 1px; box-sizing: border-box; padding-block: 5px; padding-inline: 14px">
+                    <div style="box-sizing: border-box; color: #888888; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 11px; line-height: 14px">
+                      Today
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div style="box-sizing: border-box; display: flex; gap: 10px">
+                <div style="background-color: #2C2C30; border-radius: 10px; box-sizing: border-box; flex-basis: 0%; flex-grow: 1; flex-shrink: 1; padding-block: 12px; padding-inline: 14px">
+                  <div style="box-sizing: border-box; color: #505050; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 10px; letter-spacing: 0.08em; line-height: 12px; margin-bottom: 4px; text-transform: uppercase">
+                    Volume
+                  </div>
+                  <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 18px; line-height: 22px">
+                    ₦ 42.6M
+                  </div>
+                </div>
+                <div style="background-color: #2C2C30; border-radius: 10px; box-sizing: border-box; flex-basis: 0%; flex-grow: 1; flex-shrink: 1; padding-block: 12px; padding-inline: 14px">
+                  <div style="box-sizing: border-box; color: #505050; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 10px; letter-spacing: 0.08em; line-height: 12px; margin-bottom: 4px; text-transform: uppercase">
+                    Transactions
+                  </div>
+                  <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 18px; line-height: 22px">
+                    847
+                  </div>
+                </div>
+                <div style="background-color: #E8A02014; border-color: #E8A02026; border-radius: 10px; border-style: solid; border-width: 1px; box-sizing: border-box; flex-basis: 0%; flex-grow: 1; flex-shrink: 1; padding-block: 12px; padding-inline: 14px">
+                  <div style="box-sizing: border-box; color: #E8A020; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 10px; letter-spacing: 0.08em; line-height: 12px; margin-bottom: 4px; text-transform: uppercase">
+                    Flagged
+                  </div>
+                  <div style="box-sizing: border-box; color: #E8A020; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 18px; line-height: 22px">
+                    14
+                  </div>
+                </div>
+                <div style="background-color: #E0505014; border-color: #E0505026; border-radius: 10px; border-style: solid; border-width: 1px; box-sizing: border-box; flex-basis: 0%; flex-grow: 1; flex-shrink: 1; padding-block: 12px; padding-inline: 14px">
+                  <div style="box-sizing: border-box; color: #E05050; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 10px; letter-spacing: 0.08em; line-height: 12px; margin-bottom: 4px; text-transform: uppercase">
+                    Blocked
+                  </div>
+                  <div style="box-sizing: border-box; color: #E05050; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 18px; line-height: 22px">
+                    3
+                  </div>
+                </div>
+              </div>
+              <div style="border-bottom-color: #FFFFFF0F; border-bottom-style: solid; border-bottom-width: 1px; box-sizing: border-box; display: flex; gap: 12px; padding-block: 8px; padding-inline: 12px">
+                <div style="box-sizing: border-box; display: inline-block; flex-shrink: 0; width: 28px" />
+                <div style="box-sizing: border-box; color: #505050; display: inline-block; flex-basis: 0%; flex-grow: 1; flex-shrink: 1; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 10px; letter-spacing: 0.08em; line-height: 12px; text-transform: uppercase">
+                  Route & passengers
+                </div>
+                <div style="box-sizing: border-box; color: #505050; display: inline-block; flex-shrink: 0; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 10px; letter-spacing: 0.08em; line-height: 12px; text-transform: uppercase; width: 120px">
+                  Card
+                </div>
+                <div style="box-sizing: border-box; color: #505050; display: inline-block; flex-shrink: 0; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 10px; letter-spacing: 0.08em; line-height: 12px; text-transform: uppercase; width: 80px">
+                  Trigger
+                </div>
+                <div style="box-sizing: border-box; color: #505050; display: inline-block; flex-shrink: 0; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 10px; letter-spacing: 0.08em; line-height: 12px; text-align: right; text-transform: uppercase; width: 90px">
+                  Amount
+                </div>
+                <div style="box-sizing: border-box; color: #505050; display: inline-block; flex-shrink: 0; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 10px; letter-spacing: 0.08em; line-height: 12px; text-align: center; text-transform: uppercase; width: 80px">
+                  Status
+                </div>
+              </div>
+              <div style="align-items: center; background-color: #E8A0200D; border-color: #E8A0201A; border-radius: 8px; border-style: solid; border-width: 1px; box-sizing: border-box; display: flex; gap: 12px; padding-block: 10px; padding-inline: 12px">
+                <div style="align-items: center; box-sizing: border-box; display: flex; flex-shrink: 0; height: 28px; justify-content: center; width: 28px">
+                  <div style="background-color: #E8A020; border-radius: calc(infinity * 1px); box-sizing: border-box; flex-shrink: 0; height: 8px; width: 8px" />
+                </div>
+                <div style="box-sizing: border-box; display: flex; flex-basis: 0%; flex-direction: column; flex-grow: 1; flex-shrink: 1; gap: 2px">
+                  <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 12px; font-weight: 500; line-height: 16px">
+                    Lagos → Dubai · 3 PAX
+                  </div>
+                  <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 10px; line-height: 12px">
+                    New account · First booking
+                  </div>
+                </div>
+                <div style="box-sizing: border-box; color: #888888; display: inline-block; flex-shrink: 0; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 12px; line-height: 16px; width: 120px">
+                  •••• 4471
+                </div>
+                <div style="background-color: #E8A0201F; border-radius: calc(infinity * 1px); box-sizing: border-box; flex-shrink: 0; padding-block: 2px; padding-inline: 8px; width: 80px">
+                  <div style="box-sizing: border-box; color: #E8A020; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 10px; line-height: 12px; text-align: center">
+                    High velocity
+                  </div>
+                </div>
+                <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; flex-shrink: 0; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 12px; line-height: 16px; text-align: right; width: 90px">
+                  ₦ 847,200
+                </div>
+                <div style="background-color: #E8A02026; border-radius: calc(infinity * 1px); box-sizing: border-box; flex-shrink: 0; padding-block: 3px; width: 80px">
+                  <div style="box-sizing: border-box; color: #E8A020; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 11px; line-height: 14px; text-align: center">
+                    Flagged
+                  </div>
+                </div>
+              </div>
+              <div style="align-items: center; border-bottom-color: #FFFFFF0A; border-bottom-style: solid; border-bottom-width: 1px; box-sizing: border-box; display: flex; gap: 12px; padding-block: 10px; padding-inline: 12px">
+                <div style="align-items: center; box-sizing: border-box; display: flex; flex-shrink: 0; height: 28px; justify-content: center; width: 28px">
+                  <div style="background-color: #FFFFFF26; border-radius: calc(infinity * 1px); box-sizing: border-box; flex-shrink: 0; height: 8px; width: 8px" />
+                </div>
+                <div style="box-sizing: border-box; display: flex; flex-basis: 0%; flex-direction: column; flex-grow: 1; flex-shrink: 1; gap: 2px">
+                  <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 12px; font-weight: 500; line-height: 16px">
+                    Abuja → London · 1 PAX
+                  </div>
+                  <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 10px; line-height: 12px">
+                    Known user · 8 prior bookings
+                  </div>
+                </div>
+                <div style="box-sizing: border-box; color: #888888; display: inline-block; flex-shrink: 0; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 12px; line-height: 16px; width: 120px">
+                  •••• 9832
+                </div>
+                <div style="box-sizing: border-box; flex-shrink: 0; width: 80px">
+                  <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 10px; line-height: 12px; text-align: center">
+                    —
+                  </div>
+                </div>
+                <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; flex-shrink: 0; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 12px; line-height: 16px; text-align: right; width: 90px">
+                  ₦ 312,500
+                </div>
+                <div style="background-color: #EEE9DF1A; border-radius: calc(infinity * 1px); box-sizing: border-box; flex-shrink: 0; padding-block: 3px; width: 80px">
+                  <div style="box-sizing: border-box; color: #EEE9DF; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 11px; line-height: 14px; text-align: center">
+                    Clear
+                  </div>
+                </div>
+              </div>
+              <div style="align-items: center; background-color: #E050500D; border-color: #E050501A; border-radius: 8px; border-style: solid; border-width: 1px; box-sizing: border-box; display: flex; gap: 12px; padding-block: 10px; padding-inline: 12px">
+                <div style="align-items: center; box-sizing: border-box; display: flex; flex-shrink: 0; height: 28px; justify-content: center; width: 28px">
+                  <div style="background-color: #E05050; border-radius: calc(infinity * 1px); box-sizing: border-box; flex-shrink: 0; height: 8px; width: 8px" />
+                </div>
+                <div style="box-sizing: border-box; display: flex; flex-basis: 0%; flex-direction: column; flex-grow: 1; flex-shrink: 1; gap: 2px">
+                  <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 12px; font-weight: 500; line-height: 16px">
+                    Kano → Dubai · 6 PAX
+                  </div>
+                  <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 10px; line-height: 12px">
+                    New card · BIN mismatch · Multiple IPs
+                  </div>
+                </div>
+                <div style="box-sizing: border-box; color: #888888; display: inline-block; flex-shrink: 0; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 12px; line-height: 16px; width: 120px">
+                  •••• 7731
+                </div>
+                <div style="background-color: #E050501F; border-radius: calc(infinity * 1px); box-sizing: border-box; flex-shrink: 0; padding-block: 2px; padding-inline: 8px; width: 80px">
+                  <div style="box-sizing: border-box; color: #E05050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 10px; line-height: 12px; text-align: center">
+                    BIN mismatch
+                  </div>
+                </div>
+                <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; flex-shrink: 0; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 12px; line-height: 16px; text-align: right; width: 90px">
+                  ₦ 1,240,000
+                </div>
+                <div style="background-color: #E0505026; border-radius: calc(infinity * 1px); box-sizing: border-box; flex-shrink: 0; padding-block: 3px; width: 80px">
+                  <div style="box-sizing: border-box; color: #E05050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 11px; line-height: 14px; text-align: center">
+                    Blocked
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="box-sizing: border-box; display: flex; gap: 16px">
+          <div style="background-color: #232326; border-color: #FFFFFF0F; border-radius: 12px; border-style: solid; border-width: 1px; box-sizing: border-box; display: flex; flex-basis: 0%; flex-direction: column; flex-grow: 1; flex-shrink: 1; gap: 10px; padding-block: 24px; padding-inline: 24px">
+            <div style="align-items: center; box-sizing: border-box; display: flex; gap: 8px">
+              <div style="align-items: center; background-color: #EEE9DF1A; border-color: #EEE9DF33; border-radius: calc(infinity * 1px); border-style: solid; border-width: 1px; box-sizing: border-box; display: flex; flex-shrink: 0; height: 20px; justify-content: center; width: 20px">
+                <div style="box-sizing: border-box; color: #EEE9DF; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 9px; line-height: 12px">
+                  A
+                </div>
+              </div>
+              <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 14px; line-height: 18px">
+                Shared live feed
+              </div>
+            </div>
+            <div style="box-sizing: border-box; color: #888888; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 12px; line-height: 20px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px">
+              All four analysts see the same real-time transaction stream. Flags and notes are shared instantly — no more isolated spreadsheets or missed repeat offenders.
+            </div>
+          </div>
+          <div style="background-color: #232326; border-color: #FFFFFF0F; border-radius: 12px; border-style: solid; border-width: 1px; box-sizing: border-box; display: flex; flex-basis: 0%; flex-direction: column; flex-grow: 1; flex-shrink: 1; gap: 10px; padding-block: 24px; padding-inline: 24px">
+            <div style="align-items: center; box-sizing: border-box; display: flex; gap: 8px">
+              <div style="align-items: center; background-color: #EEE9DF1A; border-color: #EEE9DF33; border-radius: calc(infinity * 1px); border-style: solid; border-width: 1px; box-sizing: border-box; display: flex; flex-shrink: 0; height: 20px; justify-content: center; width: 20px">
+                <div style="box-sizing: border-box; color: #EEE9DF; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 9px; line-height: 12px">
+                  B
+                </div>
+              </div>
+              <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 14px; line-height: 18px">
+                Trigger labels
+              </div>
+            </div>
+            <div style="box-sizing: border-box; color: #888888; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 12px; line-height: 20px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px">
+              Each flagged transaction shows the specific rule that triggered it. Analysts understand the logic, not just the outcome — which builds trust in the system and reduces manual override errors.
+            </div>
+          </div>
+          <div style="background-color: #232326; border-color: #FFFFFF0F; border-radius: 12px; border-style: solid; border-width: 1px; box-sizing: border-box; display: flex; flex-basis: 0%; flex-direction: column; flex-grow: 1; flex-shrink: 1; gap: 10px; padding-block: 24px; padding-inline: 24px">
+            <div style="align-items: center; box-sizing: border-box; display: flex; gap: 8px">
+              <div style="align-items: center; background-color: #EEE9DF1A; border-color: #EEE9DF33; border-radius: calc(infinity * 1px); border-style: solid; border-width: 1px; box-sizing: border-box; display: flex; flex-shrink: 0; height: 20px; justify-content: center; width: 20px">
+                <div style="box-sizing: border-box; color: #EEE9DF; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 9px; line-height: 12px">
+                  C
+                </div>
+              </div>
+              <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 14px; line-height: 18px">
+                Four-state status model
+              </div>
+            </div>
+            <div style="box-sizing: border-box; color: #888888; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 12px; line-height: 20px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px">
+              Clear / Flagged / Blocked / Under Review — each state has a distinct colour, label, and permitted action set. Designed to WCAG AA contrast standards throughout.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="border-top-color: #FFFFFF12; border-top-style: solid; border-top-width: 1px; box-sizing: border-box; display: flex; flex-direction: column; flex-shrink: 0; gap: 48px; padding-block: 80px; padding-inline: 80px; width: 1440px">
+        <div style="align-items: center; box-sizing: border-box; display: flex; gap: 16px">
+          <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 11px; letter-spacing: 0.1em; line-height: 14px; text-transform: uppercase">
+            05 — Outcomes
+          </div>
+          <div style="background-color: #FFFFFF0F; box-sizing: border-box; flex-basis: 0%; flex-grow: 1; flex-shrink: 1; height: 1px" />
+        </div>
+        <div style="box-sizing: border-box; display: flex; gap: 16px">
+          <div style="background-color: #232326; border-color: #FFFFFF0F; border-radius: 16px; border-style: solid; border-width: 1px; box-sizing: border-box; display: flex; flex-basis: 0%; flex-direction: column; flex-grow: 1; flex-shrink: 1; gap: 8px; padding-block: 32px; padding-inline: 32px">
+            <div style="box-sizing: border-box; color: #EEE9DF; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 48px; letter-spacing: -0.03em; line-height: 100%">
+              ↓ 79%
+            </div>
+            <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 13px; font-weight: 500; line-height: 16px">
+              Chargeback rate reduction
+            </div>
+            <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 12px; line-height: 20px">
+              From 2.8% at baseline to 0.6% at 90 days post-launch — below the card network threshold of 1% for the first time.
+            </div>
+          </div>
+          <div style="background-color: #232326; border-color: #FFFFFF0F; border-radius: 16px; border-style: solid; border-width: 1px; box-sizing: border-box; display: flex; flex-basis: 0%; flex-direction: column; flex-grow: 1; flex-shrink: 1; gap: 8px; padding-block: 32px; padding-inline: 32px">
+            <div style="box-sizing: border-box; color: #EEE9DF; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 48px; letter-spacing: -0.03em; line-height: 100%">
+              ↓ 92%
+            </div>
+            <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 13px; font-weight: 500; line-height: 16px">
+              Fraud detection lag
+            </div>
+            <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 12px; line-height: 20px">
+              Average detection time dropped from 48+ hours to under 4 hours. Real-time feed eliminated the overnight gap where most fraud previously went undetected.
+            </div>
+          </div>
+          <div style="background-color: #232326; border-color: #FFFFFF0F; border-radius: 16px; border-style: solid; border-width: 1px; box-sizing: border-box; display: flex; flex-basis: 0%; flex-direction: column; flex-grow: 1; flex-shrink: 1; gap: 8px; padding-block: 32px; padding-inline: 32px">
+            <div style="box-sizing: border-box; color: #EEE9DF; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 48px; letter-spacing: -0.03em; line-height: 100%">
+              ↓ 52%
+            </div>
+            <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 13px; font-weight: 500; line-height: 16px">
+              False positive rate
+            </div>
+            <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 12px; line-height: 20px">
+              Context-aware rules — incorporating booking history, account age, and route patterns — halved the rate of legitimate bookings incorrectly blocked.
+            </div>
+          </div>
+        </div>
+        <div style="background-color: #232326; border-color: #FFFFFF0F; border-radius: 16px; border-style: solid; border-width: 1px; box-sizing: border-box; display: flex; flex-direction: column; gap: 20px; padding-block: 40px; padding-inline: 48px">
+          <div style="box-sizing: border-box; color: #F2F2F2; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 22px; letter-spacing: -0.01em; line-height: 34px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; max-width: 860px">
+            "We used to find out about fraud when a customer called to complain. Now we know before the booking even confirms. That changes everything about how the team operates."
+          </div>
+          <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 13px; line-height: 16px">
+            — Head of Payments Operations, Wakanow Group
+          </div>
+        </div>
+      </div>
+      <div style="border-top-color: #FFFFFF12; border-top-style: solid; border-top-width: 1px; box-sizing: border-box; display: flex; flex-direction: column; flex-shrink: 0; gap: 48px; padding-block: 80px; padding-inline: 80px; width: 1440px">
+        <div style="align-items: center; box-sizing: border-box; display: flex; gap: 16px">
+          <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 11px; letter-spacing: 0.1em; line-height: 14px; text-transform: uppercase">
+            06 — Learnings
+          </div>
+          <div style="background-color: #FFFFFF0F; box-sizing: border-box; flex-basis: 0%; flex-grow: 1; flex-shrink: 1; height: 1px" />
+        </div>
+        <div style="box-sizing: border-box; display: flex; gap: 24px">
+          <div style="background-color: #232326; border-color: #FFFFFF0F; border-radius: 16px; border-style: solid; border-width: 1px; box-sizing: border-box; display: flex; flex-basis: 0%; flex-direction: column; flex-grow: 1; flex-shrink: 1; gap: 16px; padding-block: 32px; padding-inline: 32px">
+            <div style="box-sizing: border-box; color: #EEE9DF1F; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 44px; letter-spacing: -0.04em; line-height: 100%">
+              01
+            </div>
+            <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 17px; letter-spacing: -0.01em; line-height: 26px">
+              Build the data model before the UI
+            </div>
+            <div style="box-sizing: border-box; color: #888888; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 13px; line-height: 22px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px">
+              Fraud systems have deep domain complexity. Until the taxonomy of threats, case states, and rule logic was agreed with the data engineering team, wireframes were guesswork. The three weeks spent in Define paid back in avoided rework. I apply this discipline to every high-complexity internal tool now.
+            </div>
+          </div>
+          <div style="background-color: #232326; border-color: #FFFFFF0F; border-radius: 16px; border-style: solid; border-width: 1px; box-sizing: border-box; display: flex; flex-basis: 0%; flex-direction: column; flex-grow: 1; flex-shrink: 1; gap: 16px; padding-block: 32px; padding-inline: 32px">
+            <div style="box-sizing: border-box; color: #EEE9DF1F; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 44px; letter-spacing: -0.04em; line-height: 100%">
+              02
+            </div>
+            <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 17px; letter-spacing: -0.01em; line-height: 26px">
+              Analysts need to trust the logic, not just the outcome
+            </div>
+            <div style="box-sizing: border-box; color: #888888; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 13px; line-height: 22px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px">
+              Early feedback showed analysts overriding flags they didn't understand rather than acting on them. Showing the specific trigger — "BIN mismatch" rather than just "Flagged" — dramatically increased follow-through. Transparency in automated decisions is a design problem, not just an engineering one.
+            </div>
+          </div>
+          <div style="background-color: #232326; border-color: #FFFFFF0F; border-radius: 16px; border-style: solid; border-width: 1px; box-sizing: border-box; display: flex; flex-basis: 0%; flex-direction: column; flex-grow: 1; flex-shrink: 1; gap: 16px; padding-block: 32px; padding-inline: 32px">
+            <div style="box-sizing: border-box; color: #EEE9DF1F; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 44px; letter-spacing: -0.04em; line-height: 100%">
+              03
+            </div>
+            <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 17px; letter-spacing: -0.01em; line-height: 26px">
+              Edge cases revealed more than the happy path
+            </div>
+            <div style="box-sizing: border-box; color: #888888; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 13px; line-height: 22px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px">
+              International transactions, multi-currency bookings, and expired dispute windows were treated as edge cases during design. In practice, they made up 34% of fraud analyst workload. Designing for the edges first would have shaped the core interface — not the other way around.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="box-sizing: border-box; display: flex; flex-direction: column; flex-shrink: 0; margin-top: auto; width: 1440px">
+        <div style="border-top-color: #FFFFFF12; border-top-style: solid; border-top-width: 1px; box-sizing: border-box; display: flex">
+          <div style="border-right-color: #FFFFFF12; border-right-style: solid; border-right-width: 1px; box-sizing: border-box; display: flex; flex-basis: 0%; flex-direction: column; flex-grow: 1; flex-shrink: 1; gap: 8px; padding-block: 40px; padding-inline: 80px">
+            <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 11px; letter-spacing: 0.08em; line-height: 14px; text-transform: uppercase">
+              ← Previous
+            </div>
+            <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 18px; letter-spacing: -0.01em; line-height: 22px">
+              Merchant Onboarding & KYC Platform
+            </div>
+            <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 12px; line-height: 16px">
+              Paystack · Stripe Group
+            </div>
+          </div>
+          <div style="align-items: flex-end; box-sizing: border-box; display: flex; flex-basis: 0%; flex-direction: column; flex-grow: 1; flex-shrink: 1; gap: 8px; padding-block: 40px; padding-inline: 80px">
+            <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 11px; letter-spacing: 0.08em; line-height: 14px; text-align: right; text-transform: uppercase">
+              Next →
+            </div>
+            <div style="box-sizing: border-box; color: #F2F2F2; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 18px; letter-spacing: -0.01em; line-height: 22px; text-align: right">
+              Operational Workflow Redesign
+            </div>
+            <div style="box-sizing: border-box; color: #505050; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 12px; line-height: 16px; text-align: right">
+              Wakanow Group
+            </div>
+          </div>
+        </div>
+        <div style="align-items: center; border-top-color: #FFFFFF12; border-top-style: solid; border-top-width: 1px; box-sizing: border-box; display: flex; flex-shrink: 0; height: 72px; justify-content: space-between; padding-inline: 80px">
+          <div style="box-sizing: border-box; color: #2A2A2A; display: inline-block; font-family: &quot;Archivo Black&quot;, system-ui, sans-serif; font-size: 16px; letter-spacing: -0.02em; line-height: 20px">
+            Ita Okponung
+          </div>
+          <div style="box-sizing: border-box; color: #333333; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 12px; line-height: 16px">
+            © 2025 Ita Okponung. All rights reserved.
+          </div>
+          <div style="box-sizing: border-box; display: flex; gap: 24px">
+            <div style="box-sizing: border-box; color: #333333; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 12px; line-height: 16px">
+              LinkedIn
+            </div>
+            <div style="box-sizing: border-box; color: #333333; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 12px; line-height: 16px">
+              Email
+            </div>
+            <div style="box-sizing: border-box; color: #333333; display: inline-block; font-family: &quot;Inter&quot;, system-ui, sans-serif; font-size: 12px; line-height: 16px">
+              CV
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
