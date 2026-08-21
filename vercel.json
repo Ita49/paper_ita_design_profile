@@ -2,5 +2,9 @@
   "framework": null,
   "buildCommand": "",
   "outputDirectory": "website",
-  "installCommand": ""
+  "installCommand": "npm install",
+  "rewrites": [
+    { "source": "/blog", "destination": "/api/blog" },
+    { "source": "/blog/:slug", "destination": "/api/blog/post?slug=:slug" }
+  ]
 }

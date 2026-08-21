@@ -1,0 +1,9 @@
+{
+  "name": "ita-portfolio-website",
+  "private": true,
+  "version": "1.0.0",
+  "dependencies": {
+    "@portabletext/to-html": "^2.0.13",
+    "resend": "^6.14.0"
+  }
+}

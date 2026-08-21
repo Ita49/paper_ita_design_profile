@@ -9,12 +9,37 @@
   <meta property="og:title" content="Ita Okponung — Senior Product &amp; Service Designer" />
   <meta property="og:description" content="13+ years designing internal tools, dashboards, and enterprise services. Based in the UK." />
   <meta property="og:image" content="assets/images/og-card.svg" />
+  <link rel="canonical" href="https://portfolio.itasstudio.com/" />
+  <meta property="og:url" content="https://portfolio.itasstudio.com/" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/main.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ita Okponung",
+    "url": "https://portfolio.itasstudio.com/",
+    "jobTitle": "Senior Digital Product & Service Designer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Paystack (Stripe Group)"
+    },
+    "alumniOf": [
+      { "@type": "Organization", "name": "Wakanow Group" },
+      { "@type": "Organization", "name": "Zenith Bank PLC" }
+    ],
+    "email": "mailto:ita.godwin@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "GB"
+    },
+    "knowsAbout": ["Product Design", "Service Design", "UX Research", "Design Systems", "Fintech"]
+  }
+  </script>
 </head>
 <body>
 
@@ -27,6 +52,7 @@
       <div class="nav-right">
         <ul class="nav-links">
           <li><a href="work.html">Work</a></li>
+          <li><a href="/blog">Blog</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="process.html">Process</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -156,14 +182,13 @@
             <span class="tag">Wakanow</span>
           </div>
           <div class="work-card-image">
-            <div class="card-placeholder">
-              <div class="placeholder-chart">
-                <div class="placeholder-bar" style="height:32px"></div>
-                <div class="placeholder-bar" style="height:56px;background:rgba(255,255,255,0.12)"></div>
-                <div class="placeholder-bar" style="height:44px"></div>
-                <div class="placeholder-bar" style="height:70px;background:rgba(255,255,255,0.12)"></div>
-                <div class="placeholder-bar" style="height:38px"></div>
-                <div class="placeholder-bar" style="height:52px;background:rgba(255,255,255,0.12)"></div>
+            <div class="card-abstract">
+              <div class="queue-abstract">
+                <div class="queue-row"><span class="queue-dot"></span><span class="queue-bar" style="width:62%"></span></div>
+                <div class="queue-row"><span class="queue-dot"></span><span class="queue-bar" style="width:85%"></span></div>
+                <div class="queue-row flagged"><span class="queue-dot"></span><span class="queue-bar" style="width:70%"></span><span class="queue-score">HIGH RISK</span></div>
+                <div class="queue-row"><span class="queue-dot"></span><span class="queue-bar" style="width:48%"></span></div>
+                <div class="queue-row"><span class="queue-dot"></span><span class="queue-bar" style="width:76%"></span></div>
               </div>
             </div>
           </div>
@@ -181,11 +206,18 @@
             <span class="tag">Zenith Bank</span>
           </div>
           <div class="work-card-image">
-            <div class="card-placeholder" style="flex-direction:column;gap:8px;padding:20px">
-              <div style="height:6px;width:60%;background:rgba(255,255,255,0.1);border-radius:3px"></div>
-              <div style="height:6px;width:80%;background:rgba(255,255,255,0.07);border-radius:3px"></div>
-              <div style="height:6px;width:45%;background:rgba(255,255,255,0.05);border-radius:3px"></div>
-              <div style="height:20px;width:40%;background:rgba(34,211,160,0.15);border-radius:4px;margin-top:8px;border:1px solid rgba(34,211,160,0.2)"></div>
+            <div class="card-abstract">
+              <div class="journey-abstract">
+                <svg class="journey-svg" viewBox="0 0 220 70" fill="none">
+                  <polyline points="14,22 63,15 111,50 159,58 206,24" stroke="rgba(216,245,82,0.55)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" />
+                  <circle cx="14" cy="22" r="3.5" fill="rgba(255,255,255,0.35)" />
+                  <circle cx="63" cy="15" r="3.5" fill="rgba(255,255,255,0.35)" />
+                  <circle cx="111" cy="50" r="3.5" fill="rgba(255,255,255,0.35)" />
+                  <circle cx="159" cy="58" r="5" fill="#D8F552" />
+                  <circle cx="206" cy="24" r="3.5" fill="rgba(255,255,255,0.35)" />
+                </svg>
+                <span class="journey-caption">5-phase journey · friction point flagged</span>
+              </div>
             </div>
           </div>
           <div class="work-card-body">
@@ -331,6 +363,23 @@
     </div>
   </section>
 
+  <!-- ── Newsletter ─────────────────────────── -->
+  <section class="newsletter-section">
+    <div class="inner">
+      <div class="newsletter-box">
+        <span class="label">Stay in the loop</span>
+        <h2 class="newsletter-title">Get updates on what I'm building</h2>
+        <p class="newsletter-desc">Occasional notes on new case studies, side projects, and things I'm working through. No spam, unsubscribe anytime.</p>
+        <form class="newsletter-form" data-endpoint="/api/subscribe" data-success-message="Subscribed — thanks for joining.">
+          <input type="text" name="company" class="form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <input type="email" name="email" class="newsletter-input" placeholder="you@email.com" required />
+          <button type="submit" class="btn btn-primary newsletter-submit">Subscribe</button>
+        </form>
+        <p class="form-status" data-status></p>
+      </div>
+    </div>
+  </section>
+
   <!-- ── CTA ────────────────────────────────── -->
   <section class="cta-section">
     <p class="cta-label">Let's work together</p>
@@ -350,12 +399,12 @@
       <ul class="footer-links">
         <li><a href="https://paper-ita-design-profile.vercel.app/" target="_blank">LinkedIn</a></li>
         <li><a href="mailto:ita.godwin@gmail.com">Email</a></li>
-        <li><a href="#">CV</a></li>
       </ul>
     </div>
   </footer>
 
 </div><!-- /page-wrapper -->
 
+<script src="js/forms.js" defer></script>
 </body>
 </html>
