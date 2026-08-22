@@ -34,6 +34,16 @@ export default defineType({
       options: {hotspot: true},
     }),
     defineField({
+      name: 'category',
+      title: 'Category',
+      description: 'The primary topic used for filtering on the blog page. Pick an existing one when it fits, or type a new one.',
+      type: 'string',
+      options: {
+        list: ['NGO', 'Risk Management', 'Product Design', 'Side Projects'],
+      },
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
       name: 'publishedAt',
       title: 'Published At',
       type: 'datetime',

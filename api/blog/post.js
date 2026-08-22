@@ -32,7 +32,7 @@ module.exports = async (req, res) => {
   try {
     post = await sanityQuery(
       `*[_type == "post" && slug.current == $slug][0]{
-        title, excerpt, publishedAt, tags, body, coverImage
+        title, excerpt, publishedAt, category, tags, body, coverImage
       }`,
       { slug }
     );
@@ -68,6 +68,7 @@ module.exports = async (req, res) => {
     <a href="/blog" class="blog-post-breadcrumb">← Blog</a>
     <div class="blog-post-meta">
       <span>${formatDate(post.publishedAt)}</span>
+      ${post.category ? `<a href="/blog?category=${encodeURIComponent(post.category)}" class="blog-post-category">${escapeHtml(post.category)}</a>` : ''}
     </div>
     <h1 class="blog-post-title">${escapeHtml(post.title)}</h1>
     ${

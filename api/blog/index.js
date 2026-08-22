@@ -19,6 +19,7 @@ module.exports = async (req, res) => {
         "slug": slug.current,
         excerpt,
         publishedAt,
+        category,
         tags
       }`
     );
@@ -26,14 +27,36 @@ module.exports = async (req, res) => {
     console.error('Failed to fetch posts from Sanity', err);
   }
 
-  const listHtml = posts.length
+  const categories = [...new Set(posts.map((p) => p.category).filter(Boolean))].sort();
+
+  const rawCategory = req.query && req.query.category;
+  const activeCategory = typeof rawCategory === 'string' && categories.includes(rawCategory) ? rawCategory : null;
+
+  const visiblePosts = activeCategory ? posts.filter((p) => p.category === activeCategory) : posts;
+
+  const filterHtml = categories.length
+    ? `<div class="blog-filters">
+        <a href="/blog" class="blog-filter-pill${!activeCategory ? ' is-active' : ''}">All</a>
+        ${categories
+          .map(
+            (c) =>
+              `<a href="/blog?category=${encodeURIComponent(c)}" class="blog-filter-pill${
+                activeCategory === c ? ' is-active' : ''
+              }">${escapeHtml(c)}</a>`
+          )
+          .join('')}
+      </div>`
+    : '';
+
+  const listHtml = visiblePosts.length
     ? `<div class="blog-grid">
-        ${posts
+        ${visiblePosts
           .map(
             (post) => `
         <a href="/blog/${escapeHtml(post.slug)}" class="blog-card">
           <div class="blog-card-meta">
             <span>${formatDate(post.publishedAt)}</span>
+            ${post.category ? `<span class="blog-card-category">${escapeHtml(post.category)}</span>` : ''}
             ${
               post.tags && post.tags.length
                 ? `<div class="blog-card-tags">${post.tags
@@ -49,6 +72,8 @@ module.exports = async (req, res) => {
           )
           .join('\n')}
       </div>`
+    : activeCategory
+    ? `<div class="blog-empty">No posts in “${escapeHtml(activeCategory)}” yet.</div>`
     : `<div class="blog-empty">No posts yet — check back soon. New updates on what I'm building and working through will show up here.</div>`;
 
   const bodyHtml = `
@@ -62,6 +87,7 @@ module.exports = async (req, res) => {
 
   <section class="section">
     <div class="inner">
+      ${filterHtml}
       ${listHtml}
     </div>
   </section>
@@ -88,9 +114,9 @@ module.exports = async (req, res) => {
   res.setHeader('Cache-Control', 's-maxage=60, stale-while-revalidate=300');
   res.status(200).send(
     renderPage({
-      title: 'Blog — Ita Okponung',
+      title: activeCategory ? `${activeCategory} — Blog — Ita Okponung` : 'Blog — Ita Okponung',
       description: "Updates on product design, service design, and what I'm building — from Ita Okponung.",
-      canonicalPath: '/blog',
+      canonicalPath: activeCategory ? `/blog?category=${encodeURIComponent(activeCategory)}` : '/blog',
       activeNav: 'blog',
       bodyHtml,
     })
