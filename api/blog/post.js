@@ -59,7 +59,7 @@ module.exports = async (req, res) => {
     res.setHeader('Content-Type', 'text/html; charset=utf-8');
     res.status(404).send(
       renderPage({
-        title: 'Post not found — Ita Okponung',
+        title: 'Post not found | Ita Okponung',
         description: 'This blog post could not be found.',
         canonicalPath: `/blog/${slug}`,
         activeNav: 'blog',
@@ -106,8 +106,8 @@ module.exports = async (req, res) => {
   res.setHeader('Cache-Control', 's-maxage=60, stale-while-revalidate=300');
   res.status(200).send(
     renderPage({
-      title: `${post.title} — Ita Okponung`,
-      description: post.excerpt || `${post.title} — a blog post by Ita Okponung.`,
+      title: `${post.title} | Ita Okponung`,
+      description: post.excerpt || `${post.title} - a blog post by Ita Okponung.`,
       canonicalPath: `/blog/${slug}`,
       activeNav: 'blog',
       bodyHtml,

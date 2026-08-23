@@ -34,14 +34,14 @@
         })
         .then(function (result) {
           if (result.ok) {
-            setStatus(form, form.getAttribute('data-success-message') || 'Done — thank you.', 'success');
+            setStatus(form, form.getAttribute('data-success-message') || 'Done - thank you.', 'success');
             form.reset();
           } else {
             setStatus(form, (result.data && result.data.error) || 'Something went wrong. Please try again.', 'error');
           }
         })
         .catch(function () {
-          setStatus(form, 'Network error — please try again.', 'error');
+          setStatus(form, 'Network error - please try again.', 'error');
         })
         .finally(function () {
           if (submitBtn) submitBtn.disabled = false;

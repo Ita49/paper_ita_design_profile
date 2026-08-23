@@ -35,15 +35,15 @@ module.exports = async (req, res) => {
 
     if (!alreadyExists) {
       console.error('Resend contacts.create failed', createError);
-      res.status(502).json({ ok: false, error: 'Could not subscribe right now — please try again shortly.' });
+      res.status(502).json({ ok: false, error: 'Could not subscribe right now - please try again shortly.' });
       return;
     }
 
-    // Contact already exists — make sure they're still in the newsletter segment.
+    // Contact already exists - make sure they're still in the newsletter segment.
     const { data: existing, error: getError } = await resend.contacts.get({ email });
     if (getError || !existing) {
       console.error('Resend contacts.get failed after duplicate', getError);
-      res.status(502).json({ ok: false, error: 'Could not subscribe right now — please try again shortly.' });
+      res.status(502).json({ ok: false, error: 'Could not subscribe right now - please try again shortly.' });
       return;
     }
 
@@ -54,7 +54,7 @@ module.exports = async (req, res) => {
 
     if (addError) {
       console.error('Resend contacts.segments.add failed', addError);
-      res.status(502).json({ ok: false, error: 'Could not subscribe right now — please try again shortly.' });
+      res.status(502).json({ ok: false, error: 'Could not subscribe right now - please try again shortly.' });
       return;
     }
   }

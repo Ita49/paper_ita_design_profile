@@ -38,7 +38,7 @@
   <text x="80" y="398" font-family="'Archivo Black', serif" font-size="72" fill="#F2F2F2" letter-spacing="-2">that work.</text>
 
   <!-- Sub copy -->
-  <text x="80" y="458" font-family="Inter, sans-serif" font-size="20" fill="#888888">Senior Product &amp; Service Designer · 13+ years · Paystack · Stripe</text>
+  <text x="80" y="458" font-family="Inter, sans-serif" font-size="20" fill="#888888">Product &amp; Service Designer · 13+ years · Paystack · Stripe</text>
 
   <!-- Divider -->
   <line x1="80" y1="510" x2="320" y2="510" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>

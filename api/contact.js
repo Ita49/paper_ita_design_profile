@@ -3,7 +3,7 @@ const { isValidEmail, shortHash } = require('./_lib/email-utils');
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 const OWNER_EMAIL = 'ita.godwin@gmail.com';
-const FROM_ADDRESS = 'Ita Okponung — Site <hello@itasstudio.com>';
+const FROM_ADDRESS = 'Ita Okponung - Site <hello@itasstudio.com>';
 
 function escapeHtml(str = '') {
   return String(str)
@@ -62,7 +62,7 @@ module.exports = async (req, res) => {
 
   if (error) {
     console.error('Resend emails.send failed', error);
-    res.status(502).json({ ok: false, error: 'Could not send your message right now — please try again shortly, or email directly.' });
+    res.status(502).json({ ok: false, error: 'Could not send your message right now - please try again shortly, or email directly.' });
     return;
   }
 

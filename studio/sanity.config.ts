@@ -5,7 +5,7 @@ import {schemaTypes} from './schemaTypes'
 
 export default defineConfig({
   name: 'default',
-  title: 'Ita Okponung — Blog',
+  title: 'Ita Okponung - Blog',
 
   projectId: 'h13zm2yl',
   dataset: 'production',
