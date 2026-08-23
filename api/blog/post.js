@@ -17,6 +17,21 @@ const portableTextComponents = {
       const src = imageUrl(value, { width: 1200 });
       return src ? `<img src="${src}" alt="${escapeHtml(value.alt || '')}" loading="lazy" />` : '';
     },
+    flowDiagram: ({ value }) => {
+      const steps = Array.isArray(value.steps) ? value.steps : [];
+      if (!steps.length) return '';
+      return `<div class="blog-flow">
+        ${steps
+          .map(
+            (step, i) => `
+        <div class="blog-flow-step">
+          <span class="blog-flow-step-number">${i + 1}</span>
+          <span class="blog-flow-step-text">${escapeHtml(step)}</span>
+        </div>`
+          )
+          .join('')}
+      </div>`;
+    },
   },
 };
 
