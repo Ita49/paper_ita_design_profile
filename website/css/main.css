@@ -1754,6 +1754,11 @@ img {
   color: var(--color-text-secondary);
 }
 
+.timeline-role-secondary {
+  font-size: var(--text-xs2);
+  color: var(--color-text-caption);
+}
+
 .credentials-strip {
   padding: var(--space-5) 0 var(--space-9);
   font-size: var(--text-xs2);
