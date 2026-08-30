@@ -6,45 +6,46 @@
 
   /* ── Colors ─────────────────────────────── */
 
-  /* Backgrounds */
-  --color-bg:          #1A1A1C;
-  --color-surface:     #232326;
-  --color-surface-2:   #2C2C30;
-  --color-surface-3:   #36363B;
+  /* Backgrounds — warm space grey, "pencil and paper" */
+  --color-bg:          #2A2926;
+  --color-surface:     #333230;
+  --color-surface-2:   #3C3A36;
+  --color-surface-3:   #454338;
+  --color-well:        #201F1B;   /* darker inset cards, e.g. status-card */
 
   /* Borders */
-  --color-border:      rgba(255, 255, 255, 0.07);
-  --color-border-med:  rgba(255, 255, 255, 0.12);
-  --color-border-hi:   rgba(255, 255, 255, 0.20);
+  --color-border:      rgba(237, 232, 221, 0.09);
+  --color-border-med:  rgba(237, 232, 221, 0.16);
+  --color-border-hi:   rgba(237, 232, 221, 0.24);
 
   /* Text */
-  --color-text-primary:    #F2F2F2;
-  --color-text-secondary:  #888888;
-  --color-text-muted:      #555555;   /* body on dark bg */
-  --color-text-tertiary:   #505050;
-  --color-text-faint:      #333333;   /* footer links */
-  --color-text-ghost:      #2A2A2A;   /* near-invisible on dark */
-  --color-text-caption:    #AAAAAA;   /* captions, inline metadata */
-  --color-text-inverse:    #1A1A1C;
+  --color-text-primary:    #EDE8DD;   /* paper */
+  --color-text-secondary:  #A29C8E;
+  --color-text-muted:      #6E6A5F;   /* body on dark bg */
+  --color-text-tertiary:   #5C584E;
+  --color-text-faint:      #45423A;   /* footer links */
+  --color-text-ghost:      #37352F;   /* near-invisible on dark */
+  --color-text-caption:    #ABA598;   /* captions, inline metadata */
+  --color-text-inverse:    #2A2926;
 
-  /* Accent — warm off-white (editorial, confident) */
-  --color-accent:          #EEE9DF;
-  --color-accent-soft:     rgba(238, 233, 223, 0.10);
-  --color-accent-border:   rgba(238, 233, 223, 0.20);
+  /* Accent — warm paper white (editorial, confident) */
+  --color-accent:          #EDE8DD;
+  --color-accent-soft:     rgba(237, 232, 221, 0.10);
+  --color-accent-border:   rgba(237, 232, 221, 0.20);
 
-  /* Accent 2 — lime (active states, highlights, data positive) */
-  --color-accent-2:        #D8F552;
-  --color-accent-2-soft:   rgba(216, 245, 82, 0.10);
-  --color-accent-2-border: rgba(216, 245, 82, 0.20);
+  /* Accent 2 — highlighter amber (active states, highlights, data positive) */
+  --color-accent-2:        #D8AF63;
+  --color-accent-2-soft:   rgba(216, 175, 99, 0.10);
+  --color-accent-2-border: rgba(216, 175, 99, 0.20);
 
   /* Semantic — data / status */
-  --color-positive:   #D8F552;   /* same as accent-2 */
-  --color-success:    #4DB6AC;   /* teal */
+  --color-positive:   #D8AF63;   /* same as accent-2 */
+  --color-success:    #8FA487;   /* sage */
   --color-warning:    #E8A020;   /* amber */
   --color-error:      #E05050;   /* red */
 
   /* Semantic soft variants */
-  --color-success-soft:  rgba(77, 182, 172, 0.10);
+  --color-success-soft:  rgba(143, 164, 135, 0.10);
   --color-warning-soft:  rgba(232, 160, 32, 0.10);
   --color-error-soft:    rgba(224, 80, 80, 0.10);
 
