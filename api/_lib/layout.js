@@ -21,11 +21,16 @@ function renderPage({ title, description, canonicalPath, activeNav, bodyHtml }) 
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
   <meta property="og:title" content="${escapeHtml(title)}" />
   <meta property="og:description" content="${escapeHtml(description)}" />
-  <meta property="og:image" content="/assets/images/og-card.svg" />
+  <meta property="og:image" content="https://portfolio.itasstudio.com/assets/images/og-card.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <link rel="canonical" href="${canonicalUrl}" />
   <meta property="og:url" content="${canonicalUrl}" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="${escapeHtml(title)}" />
+  <meta name="twitter:description" content="${escapeHtml(description)}" />
+  <meta name="twitter:image" content="https://portfolio.itasstudio.com/assets/images/og-card.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />

@@ -34,18 +34,18 @@
   <text x="114" y="187" font-family="Inter, sans-serif" font-size="12" font-weight="500" fill="#D8F552" letter-spacing="0.08em" text-transform="uppercase">AVAILABLE FOR WORK</text>
 
   <!-- Main headline -->
-  <text x="80" y="310" font-family="'Archivo Black', serif" font-size="72" fill="#F2F2F2" letter-spacing="-2">Designing systems</text>
-  <text x="80" y="398" font-family="'Archivo Black', serif" font-size="72" fill="#F2F2F2" letter-spacing="-2">that work.</text>
+  <text x="80" y="304" font-family="'Archivo Black', serif" font-size="62" fill="#F2F2F2" letter-spacing="-1.5">Designing systems</text>
+  <text x="80" y="384" font-family="'Archivo Black', serif" font-size="62" fill="#F2F2F2" letter-spacing="-1.5">that work.</text>
 
   <!-- Sub copy -->
-  <text x="80" y="458" font-family="Inter, sans-serif" font-size="20" fill="#888888">Product &amp; Service Designer · 13+ years · Paystack · Stripe</text>
+  <text x="80" y="458" font-family="Inter, sans-serif" font-size="20" fill="#888888">Product &amp; Service Designer · 13+ years · SaaS, fintech, enterprise</text>
 
   <!-- Divider -->
   <line x1="80" y1="510" x2="320" y2="510" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
 
   <!-- Bottom meta -->
   <text x="80" y="540" font-family="Inter, sans-serif" font-size="14" font-weight="500" fill="#555555" letter-spacing="0.06em">ITA OKPONUNG</text>
-  <text x="80" y="562" font-family="Inter, sans-serif" font-size="13" fill="#333333">paper-ita-design-profile.vercel.app</text>
+  <text x="80" y="562" font-family="Inter, sans-serif" font-size="13" fill="#333333">portfolio.itasstudio.com</text>
 
   <!-- Right decorative element — mini dashboard mockup -->
   <rect x="780" y="120" width="340" height="220" rx="12" fill="#232326" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
