@@ -26,6 +26,7 @@ If Ita hasn't already pasted an update in this conversation, ask for it. Source 
 
 - **Never name the NGO or any organisation involved**, in any post, ever. If the source material names one, remove it and rephrase around it (e.g. "an NGO that...", "the organisation").
 - **Don't over-share internal/sensitive detail.** Focus on the problem being solved and the automation/solution angle — not internals that read as confidential.
+- **No em dashes, anywhere.** Use a plain hyphen, a period, or a comma instead. Write like a person, not a script — Ita has flagged em dashes specifically as a tell for AI-written text.
 - If genuinely unsure whether something is safe to publish, ask Ita rather than guessing.
 
 Full standing context for the recurring NGO series specifically is in Claude's memory (`project_ngo_blog_series` — load it if unsure of a detail like cadence or prior framing).
@@ -86,3 +87,13 @@ Use `"style": "h2"` for subheadings. Generate unique `_key` values (e.g. random 
 ## 8. Verify and report back
 
 After publishing, `curl` the live URL (`https://portfolio.itasstudio.com/blog/<slug>`) to confirm it's live (HTTP 200), and check it also appears on `/blog` and `/blog?category=<category>`. Report the live URL back to Ita.
+
+## 9. Notify subscribers
+
+Once the post is confirmed live, notify the "Newsletter Subscribers" Resend segment automatically, no separate confirmation needed (Ita confirmed 2026-09-16 that this should be bundled into the same approval as the publish, not asked again each time):
+
+```
+node scripts/notify-subscribers.js <slug> --send
+```
+
+This creates and sends a Resend Broadcast to the segment (see `api/_lib/post-notification-email.js` for the email template — same visual style as the welcome email, auto-includes the unsubscribe link). It's safe to re-run; it skips sending if a broadcast for that slug already went out. Report the result (sent, or skipped because already sent) back to Ita along with the live URL.
