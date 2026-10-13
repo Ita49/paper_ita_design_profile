@@ -32,6 +32,21 @@ const portableTextComponents = {
           .join('')}
       </div>`;
     },
+    visualFlow: ({ value }) => {
+      const steps = Array.isArray(value.steps) ? value.steps : [];
+      if (!steps.length) return '';
+      return `<div class="blog-flowchart" role="list">
+        ${steps
+          .map(
+            (step, i) => `
+        <div class="blog-flowchart-node" role="listitem">
+          <span class="blog-flowchart-num">${i + 1}</span>
+          <span class="blog-flowchart-text">${escapeHtml(step)}</span>
+        </div>`
+          )
+          .join('')}
+      </div>`;
+    },
   },
 };
 
